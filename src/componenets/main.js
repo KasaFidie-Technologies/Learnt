@@ -7,6 +7,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
 
+
 import Language from './Language/Language';
 import Home from './Home/Home';
 import Profile from './Profile/Profile';
@@ -29,7 +30,7 @@ function HomeTabs() {
 function Main() {
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName={'Language'}>
+      <Stack.Navigator initialRouteName={'SignUp'}>
         <Stack.Screen 
           name="HomeTabs" 
           component={HomeTabs} 
@@ -39,6 +40,7 @@ function Main() {
         <Stack.Screen name="Language" component={Language} />
       </Stack.Navigator>
     </NavigationContainer>
+    
   );
 }
 
